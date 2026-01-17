@@ -163,7 +163,7 @@ bool Init(std::string appId)
     }
 
     discord::Core *corePtr = nullptr;
-    auto res = discord::Core::Create(cid, static_cast<std::uint64_t>(discord::CreateFlags::Default), &corePtr);
+    auto res = discord::Core::Create(cid, static_cast<std::uint64_t>(discord::CreateFlags::NoRequireDiscord), &corePtr);
     if (res != Result::Ok || !corePtr)
     {
         std::ostringstream os;
