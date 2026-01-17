@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>18.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{280fc24c-1a49-4969-b984-718c9fb20368}</ProjectGuid>
+    <RootNamespace>DelicateInjector</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>Libraries\imgui;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>Libraries\discord;Libraries\imgui;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Libraries\discord\discord_game_sdk.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <DelayLoadDLLs>Libraries\discord\discord_game_sdk.dll;discord_game_sdk.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Delicate-Injector.h" />
+    <ClInclude Include="Libraries\discord\cpp\achievement_manager.h" />
+    <ClInclude Include="Libraries\discord\cpp\activity_manager.h" />
+    <ClInclude Include="Libraries\discord\cpp\application_manager.h" />
+    <ClInclude Include="Libraries\discord\cpp\core.h" />
+    <ClInclude Include="Libraries\discord\cpp\discord.h" />
+    <ClInclude Include="Libraries\discord\cpp\event.h" />
+    <ClInclude Include="Libraries\discord\cpp\ffi.h" />
+    <ClInclude Include="Libraries\discord\cpp\image_manager.h" />
+    <ClInclude Include="Libraries\discord\cpp\lobby_manager.h" />
+    <ClInclude Include="Libraries\discord\cpp\network_manager.h" />
+    <ClInclude Include="Libraries\discord\cpp\overlay_manager.h" />
+    <ClInclude Include="Libraries\discord\cpp\relationship_manager.h" />
+    <ClInclude Include="Libraries\discord\cpp\storage_manager.h" />
+    <ClInclude Include="Libraries\discord\cpp\store_manager.h" />
+    <ClInclude Include="Libraries\discord\cpp\types.h" />
+    <ClInclude Include="Libraries\discord\cpp\user_manager.h" />
+    <ClInclude Include="Libraries\discord\cpp\voice_manager.h" />
+    <ClInclude Include="Libraries\imgui\blur\imfx.h" />
+    <ClInclude Include="Libraries\imgui\image\stb_image.h" />
+    <ClInclude Include="Libraries\imgui\imconfig.h" />
+    <ClInclude Include="Libraries\imgui\imgui.h" />
+    <ClInclude Include="Libraries\imgui\imgui_internal.h" />
+    <ClInclude Include="Libraries\imgui\impl\imgui_impl_dx11.h" />
+    <ClInclude Include="Libraries\imgui\impl\imgui_impl_dx12.h" />
+    <ClInclude Include="Libraries\imgui\impl\imgui_impl_win32.h" />
+    <ClInclude Include="Libraries\imgui\imspinner\imspinner.h" />
+    <ClInclude Include="Libraries\imgui\imstb_rectpack.h" />
+    <ClInclude Include="Libraries\imgui\imstb_textedit.h" />
+    <ClInclude Include="Libraries\imgui\imstb_truetype.h" />
+    <ClInclude Include="Libraries\json\json.hpp" />
+    <ClInclude Include="Ressources\framework.h" />
+    <ClInclude Include="Ressources\Resource.h" />
+    <ClInclude Include="src\Config.h" />
+    <ClInclude Include="src\DiscordRPC.h" />
+    <ClInclude Include="src\DllHelper.h" />
+    <ClInclude Include="src\FileListener.h" />
+    <ClInclude Include="src\Injector.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="Utils\Delicate.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Delicate-Injector.cpp" />
+    <ClCompile Include="Libraries\discord\cpp\achievement_manager.cpp" />
+    <ClCompile Include="Libraries\discord\cpp\activity_manager.cpp" />
+    <ClCompile Include="Libraries\discord\cpp\application_manager.cpp" />
+    <ClCompile Include="Libraries\discord\cpp\core.cpp" />
+    <ClCompile Include="Libraries\discord\cpp\image_manager.cpp" />
+    <ClCompile Include="Libraries\discord\cpp\lobby_manager.cpp" />
+    <ClCompile Include="Libraries\discord\cpp\network_manager.cpp" />
+    <ClCompile Include="Libraries\discord\cpp\overlay_manager.cpp" />
+    <ClCompile Include="Libraries\discord\cpp\relationship_manager.cpp" />
+    <ClCompile Include="Libraries\discord\cpp\storage_manager.cpp" />
+    <ClCompile Include="Libraries\discord\cpp\store_manager.cpp" />
+    <ClCompile Include="Libraries\discord\cpp\types.cpp" />
+    <ClCompile Include="Libraries\discord\cpp\user_manager.cpp" />
+    <ClCompile Include="Libraries\discord\cpp\voice_manager.cpp" />
+    <ClCompile Include="Libraries\imgui\blur\imfx.cpp" />
+    <ClCompile Include="Libraries\imgui\imgui.cpp" />
+    <ClCompile Include="Libraries\imgui\imgui_demo.cpp" />
+    <ClCompile Include="Libraries\imgui\imgui_draw.cpp" />
+    <ClCompile Include="Libraries\imgui\imgui_tables.cpp" />
+    <ClCompile Include="Libraries\imgui\imgui_widgets.cpp" />
+    <ClCompile Include="Libraries\imgui\impl\imgui_impl_dx11.cpp" />
+    <ClCompile Include="Libraries\imgui\impl\imgui_impl_dx12.cpp" />
+    <ClCompile Include="Libraries\imgui\impl\imgui_impl_win32.cpp" />
+    <ClCompile Include="src\Config.cpp" />
+    <ClCompile Include="src\DiscordRPC.cpp" />
+    <ClCompile Include="src\DllHelper.cpp" />
+    <ClCompile Include="src\FileListener.cpp" />
+    <ClCompile Include="src\Injector.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Ressources\Delicate-Injector.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Ressources\Delicate-Injector.ico" />
+    <Image Include="Ressources\small.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="Libraries\discord\discord_game_sdk.dll.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Libraries\discord\discord_game_sdk.dll" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
