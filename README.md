@@ -2,7 +2,7 @@
 
 DLL Injector made for Delicate Client.
 
-Latest Version Of \[Injector] (https://github.com/heydismal0/Delicate-Injector-public/releases/latest/download/DelicateInjector.exe)
+Latest Version Of [Injector](https://github.com/heydismal0/Delicate-Injector-public/releases/latest/download/DelicateInjector.exe)
 
 #### May flag as a virus, but feel free to check the code to ensure safety and trust.
 
@@ -12,7 +12,7 @@ Latest Version Of \[Injector] (https://github.com/heydismal0/Delicate-Injector-p
 
 ## Issues:
 
-Feel free to message in our Discord \[Server] (https://discord.gg/s5v7hc6Z4e) with any issues you find.
+Feel free to message in our Discord [Server](https://discord.gg/s5v7hc6Z4e) with any issues you find.
 
 ## Contributing:
 
